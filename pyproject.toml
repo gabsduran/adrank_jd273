@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gabsduran-adrank_jd273"
+version = "0.1.0"
+description = "通过字符级与结构级特征识别广告召回与排序工程师·量化位宽与精度回退的痕迹，给出密度与命中位置"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "gabsduran" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://gabsduran.github.io"
+Repository = "https://github.com/gabsduran/adrank_jd273"
+Issues = "https://github.com/gabsduran/adrank_jd273/issues"
+
+[project.scripts]
+adrank_jd273 = "adrank_jd273:main"
+
+[tool.setuptools]
+py-modules = ["adrank_jd273"]
